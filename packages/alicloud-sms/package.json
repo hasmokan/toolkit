@@ -1,6 +1,6 @@
 {
   "name": "@hasmokan/alicloud-sms",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "hasmokan AliCloud SMS Service SDK ",
   "main": "/dist/src/index.js",
   "scripts": {
