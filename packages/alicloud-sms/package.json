@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "hasmokan AliCloud SMS Service SDK ",
   "main": "/dist/src/index.js",
+  "private": false,
   "scripts": {
     "dev": "tsc -w",
     "build": "tsc",
@@ -24,5 +25,5 @@
     "@alicloud/tea-util": "^1.4.9",
     "@darabonba/time": "^1.0.0"
   },
-  "gitHead": "7dbebe6120c535c236112ff4f47fbe1cddfeef31"
+  "gitHead": "5b46941d8bcbc733f62b25ae47281538e6508bd1"
 }
