@@ -1,15 +1,27 @@
 {
   "name": "@hasmokan/alicloud-sms",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "hasmokan AliCloud SMS Service SDK ",
+  "main": "/dist/src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsc -w",
+    "build": "tsc",
+    "start:dev": "set NODE_ENV=development && node -r dotenv/config dist/index.js",
+    "start:prod": "set NODE_ENV=production && node -r dotenv/config dist/index.js"
   },
   "author": "hasmokan",
   "keywords": [
     "alicloud",
     "sms"
   ],
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@alicloud/credentials": "^2.4.0",
+    "@alicloud/darabonba-string": "^1.0.3",
+    "@alicloud/dysmsapi20170525": "^3.1.0",
+    "@alicloud/openapi-client": "^0.4.12",
+    "@alicloud/tea-console": "^1.0.0",
+    "@alicloud/tea-util": "^1.4.9",
+    "@darabonba/time": "^1.0.0"
+  }
 }

@@ -6,9 +6,7 @@ Lerna + Monorepo
 
 ## Features
 
-- **Tool 1**: Description of tool 1 and its usage.
-- **Tool 2**: Description of tool 2 and its usage.
-- **Tool 3**: Description of tool 3 and its usage.
+- **Alicloud sms SDK**: send verified code and check status.
 
 ## Installation
 
