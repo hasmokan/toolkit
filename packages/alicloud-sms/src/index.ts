@@ -56,14 +56,14 @@ export class AliCloudSms {
       const sendResp = await this.client.sendSms(sendReq);
 
       if (!sendResp?.body?.code)
-        return new Error('发送失败：未收到响应的错误代码');
+        throw new Error('发送失败：未收到响应的错误代码');
 
       if (!sendResp?.body?.bizId)
-        return new Error('发送失败：未收到 bizId');
+        throw new Error('发送失败：未收到 bizId');
 
       const code = sendResp.body.code;
       if (code !== 'OK') {
-        return new Error(`发送失败：${sendResp.body.message}`);
+        throw new Error(`发送失败：${sendResp.body.message}`);
       }
 
       return sendResp.body.bizId;
