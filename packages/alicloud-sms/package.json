@@ -1,9 +1,9 @@
 {
   "name": "@hasmokan/alicloud-sms",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "hasmokan AliCloud SMS Service SDK ",
-  "main": "./build/index.mjs",
-  "module": "./build/index.js",
+  "main": "./build/index.js",
+  "module": "./build/index.mjs",
   "exports": {
     "import": "./build/index.mjs",
     "require": "./build/index.js"
@@ -34,7 +34,7 @@
     "@darabonba/time": "^1.0.0"
   },
   "files": [
-    "dist/",
+    "/build",
     "README.md",
     "LICENSE"
   ],
